@@ -6,8 +6,8 @@ var {setDefaultTimeout} = require('cucumber');
 function CustomWorld({attach}){
     this.attach = attach;
 
-    // Set the Cucumber Steps timeout (default is only 5s)
-    setDefaultTimeout(30 * 1000);
+    // Disable the Cucumber Steps timeout (default is only 5s)
+    setDefaultTimeout(-1);
 
     this.driver = new seleniumWebdriver.Builder()
     .forBrowser('chrome')
