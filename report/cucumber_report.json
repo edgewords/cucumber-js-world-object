@@ -12,7 +12,12 @@
         "keyword": "Scenario",
         "line": 3,
         "name": "Web Search using Google",
-        "tags": [],
+        "tags": [
+          {
+            "name": "@ignore",
+            "line": 2
+          }
+        ],
         "type": "scenario",
         "steps": [
           {
@@ -24,33 +29,34 @@
               "location": "Code\\CukeWorldObj\\node_modules\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:141"
             },
             "result": {
-              "status": "failed",
-              "duration": 3000000,
-              "error_message": "TypeError: Cannot read property 'get' of undefined\n    at World.<anonymous> (C:\\Users\\tom\\Documents\\Projects\\Visual Code\\CukeWorldObj\\features\\step_definitions\\googleSearch.steps.js:7:33)"
+              "status": "passed",
+              "duration": 2778000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 5,
-            "name": "I search for 'Edgewords'",
+            "name": "I search for \"Edgewords\"",
             "match": {
               "location": "Code\\CukeWorldObj\\node_modules\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:141"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 1543000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 6,
-            "name": "'Blob' appears in list",
+            "name": "\"Edgewords\" appears in list",
             "match": {
               "location": "Code\\CukeWorldObj\\node_modules\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:141"
             },
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 297000000
             }
           },
           {
@@ -60,9 +66,8 @@
               "location": "Code\\CukeWorldObj\\node_modules\\cucumber\\lib\\support_code_library_builder\\build_helpers.js:141"
             },
             "result": {
-              "status": "failed",
-              "duration": 1000000,
-              "error_message": "TypeError: Cannot read property 'takeScreenshot' of undefined\n    at World.<anonymous> (C:\\Users\\tom\\Documents\\Projects\\Visual Code\\CukeWorldObj\\features\\step_definitions\\hooks.js:9:44)"
+              "status": "passed",
+              "duration": 154000000
             }
           }
         ]

@@ -1,6 +1,12 @@
 'use strict';
 
-const {After, Status} = require('cucumber');
+const {BeforeAll, After, Status} = require('cucumber');
+var {setDefaultTimeout} = require('cucumber');
+
+BeforeAll(function(){
+    // Disable the Cucumber Steps timeout (default is only 5s)
+    setDefaultTimeout(-1);
+})
 
 After(async function(testCase) {
     const world = this;
