@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/.bin/cucumber-js -f json:report/cucumber_report.json"
+    "test": "./node_modules/.bin/cucumber-js --world-parameters \"{\\\"browser\\\":\\\"chrome\\\"}\" -f json:report/cucumber_report.json"
   },
   "author": "TAM",
   "license": "UNLICENSED",
@@ -13,6 +13,7 @@
     "chromedriver": "^2.42.1",
     "cucumber": "^5.0.2",
     "cucumber-html-reporter": "^4.0.4",
+    "geckodriver": "^1.12.2",
     "selenium-webdriver": "^4.0.0-alpha.1"
   }
 }
